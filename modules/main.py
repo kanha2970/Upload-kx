@@ -188,11 +188,11 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '/AASHU' for extracting name from your text filename🧐.**")
+    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '.' for extracting name from your text filename🧐.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '/AASHU':
+    if raw_text0 == '.':
         b_name = file_name
     else:
         b_name = raw_text0
@@ -219,20 +219,20 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/AASHU' for use default🥂.**\n**For an Example**:\n @DOCTOR_JB")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '.' for use default🥂.**\n**For an Example**:\n @DOCTOR_JB")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    if raw_text3 == '/AASHU':
+    if raw_text3 == '.':
         CR = credit
     else:
         CR = raw_text3
         
-    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋 or send '/AASHU' for use default🫣**")
+    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋 or send '.' for use default🫣**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
-    if raw_text4 == '/AASHU':
+    if raw_text4 == '.':
         MR = token
     else:
         MR = raw_text4
@@ -395,7 +395,7 @@ async def txt_handler(bot: Client, m: Message):
 
 # Advance
 
-@bot.on_message(filters.command(["TEAM1"]) )
+@bot.on_message(filters.command(["TEAM"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch🥂.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -425,11 +425,11 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '/AASHU' for extracting Name from your text filename😚.**")
+    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '.' for extracting Name from your text filename😚.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '/AASHU':
+    if raw_text0 == '.':
         b_name = file_name
     else:
         b_name = raw_text0
@@ -456,11 +456,11 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/AASHU'for use default🥂.**\n**For an Example**:\n @DOCTOR_JB")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '.'for use default🥂.**\n**For an Example**:\n @DOCTOR_JB")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    if raw_text3 == '/AASHU':
+    if raw_text3 == '.':
         CR = credit
     else:
         CR = raw_text3
