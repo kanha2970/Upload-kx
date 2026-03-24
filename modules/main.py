@@ -568,17 +568,17 @@ async def txt_handler(bot: Client, m: Message):
                 cc = (
     f"🪪 <b>Index ID :</b> {str(count).zfill(3)}\n\n"
     f"📒 <b>Title :</b> {name}\n\n"
-    f"<blockquote>📚 Batch : {b_name}</blockquote>\n\n"
+    f"<blockquote>📚 Batch Name: {b_name}</blockquote>\n\n"
     f"📥 <b>Upload By:</b> 【 <a href='https://t.me/{CR.replace('@','')}'>{CR}</a> 】\n\n"
     f"<blockquote>━━━━━✦𝗭𝗫✦━━━━━</blockquote>"
-                        )
+            )
                 cc1 = (
     f"🪪 <b>Index ID :</b> {str(count).zfill(3)}\n\n"
     f"📒 <b>Title :</b> {name}.pdf\n\n"
-    f"<blockquote>📚 Batch : {b_name}</blockquote>\n\n"
+    f"<blockquote>📚 Batch Name: {b_name}</blockquote>\n\n"
     f"📥 <b>Upload By:</b> 【 <a href='https://t.me/{CR.replace('@','')}'>{CR}</a> 】\n\n"
     f"<blockquote>━━━━━✦𝗭𝗫✦━━━━━</blockquote>"
-                )
+            )
                     
                 
                 if "drive" in url:
