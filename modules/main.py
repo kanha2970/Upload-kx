@@ -565,20 +565,9 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
         
-                cc = (
-    f"<b>🏷️ Iɴᴅᴇx ID :</b> {str(count).zfill(3)}\n\n"
-    f"<b>🎞️ Tɪᴛʟᴇ :</b> {name}\n\n"
-    f"<blockquote>📚 𝗕ᴀᴛᴄʜ : {b_name}</blockquote>\n\n"
-    f"<b>📥 Uᴘʟᴏᴀᴅ Bʏ :</b> 【 <a href='https://t.me/{CR.replace('@','')}'>{CR}</a> 】\n\n"
-    f"<blockquote>━━━━━ ✦𝗭𝗫✦ ━━━━━</blockquote>"
-)
-                cc1 = (
-    f"<b>🏷️ Iɴᴅᴇx ID :</b> {str(count).zfill(3)}\n\n"
-    f"<b>📑 Tɪᴛʟᴇ :</b> {name}.pdf\n\n"
-    f"<blockquote>📚 𝗕ᴀᴛᴄʜ : {b_name}</blockquote>\n\n"
-    f"<b>📥 Uᴘʟᴏᴀᴅ Bʏ :</b> 【 <a href='https://t.me/{CR.replace('@','')}'>{CR}</a> 】\n\n"
-    f"<blockquote>━━━━━ ✦𝗭𝗫✦ ━━━━━</blockquote>"
-    )
+                cc1 = f'🏷️ Iɴᴅᴇx ID :</b> {str(count).zfill(3)}\n\n📑 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By: </b> 【 <a href='https://t.me/{CR.replace('@','')}'>{CR}</a> 】\n\n∘━━━━━✦𝗭𝗫✦━━━━━**'
+                cc1 = f'🏷️ Iɴᴅᴇx ID :</b> {str(count).zfill(3)}\n\n📑 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By: </b> 【 <a href='https://t.me/{CR.replace('@','')}'>{CR}</a> 】\n\n∘━━━━━✦𝗭𝗫✦━━━━━**'
+        )
                     
                 
                 if "drive" in url:
